@@ -301,6 +301,24 @@ async.map(arr, function (file, callback) {
 
 );
 
+//Task 6: filter, filterSeries, filterLimit
+
+arr = ['file1.json','file2.json','file3.json','file4.json', 'file5.json'];
+
+async.filter(arr, function (file, callback) {
+    setTimeout(callback(fs.exists(file, function (exist) {
+        console.log(exist);
+        return exist;
+    })), 2000);
+
+}, function (result) {
+    console.log(result);
+});
+
+
+
+
+
 
 
 

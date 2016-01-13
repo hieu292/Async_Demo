@@ -17,5 +17,10 @@ Duyệt tuần tự mảng
 # Task 5: map, mapLimit, mapSeries
 **Note:**
 * map: Run parallel and the results array will be in the same order as the original arr.
-# Task 6: 
+# Task 6:  filter, filterLimit, filterSeries
+có thể gọi hàm select (nó làm hàm ẩn danh của filter)
+hàm callback của iterator phải trả về true hoặc false
+hàm thực thi song song (parallel)
+Kết quả theo thứ tự như array truyền vào.
+
 
