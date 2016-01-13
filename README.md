@@ -14,21 +14,21 @@ Duyệt tuần tự mảng
 * forEachOf, forEachOfSeries, forEachOfLimit duyệt tuần tự object.
 * each: Run parallel, there is no guarantee that the iterator functions will complete in order.
 * each: Run Sequence
-# Task 5: map, mapLimit, mapSeries
+<h1> Task 5: map, mapLimit, mapSeries </h1>
 **Note:**
 * map: Run parallel and the results array will be in the same order as the original arr.
-# Task 6:  filter, filterLimit, filterSeries
+<h1> Task 6:  filter, filterLimit, filterSeries </h1?
 có thể gọi hàm select (nó làm hàm ẩn danh của filter)
 hàm callback của iterator phải trả về true hoặc false
 hàm thực thi song song (parallel)
 Kết quả theo thứ tự như array truyền vào.
-# Task 7: reduce, reduceRight
-# Task 8: detect, detectSeries, detectLimit
+<h1> Task 7: reduce, reduceRight</h1> 
+<h1> Task 8: detect, detectSeries, detectLimit </h1> 
 trả về giá trị đầu tiên trong mảng khi mà hàm iterator return true,
 hàm iterator chạy song song (parallel)
-# Task 9: sortOrder
+<h1>Task 9: sortOrder </h1> 
 sắp xếp mảng
-# Task 10: concat 
+<h1> Task 10: concat  </h1>
 thu thập các kết quả từ hàm iterator vào một mảng.
 
 
