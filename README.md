@@ -8,4 +8,14 @@ Thực thi một dãy các hàm, mỗi hàm được chạy một lần và sau 
 Chạy một mảng các hàm song song, không đợi lần lượt kết thúc như series. Nếu bất cứ một lỗi từ một hàm callback thì lập tức trả về lỗi. Kết quả sẽ được trả về một mảng từ kết quả của các hàm callback. 
 # Task 3: waterfall
 Chạy một mảng các hàm, gọi tuần tự các hàm giống như series nhưng kết quả trả về là kết quả của hàm cuối cùng. Nếu một trong các hàm bị lỗi thì waterfall sẽ trả về lỗi.
+# Task 4: each, eachLimit, eachSeries
+Duyệt tuần tự mảng
+**Note:** 
+* forEachOf, forEachOfSeries, forEachOfLimit duyệt tuần tự object.
+* each: Run parallel, there is no guarantee that the iterator functions will complete in order.
+* each: Run Sequence
+# Task 5: map, mapLimit, mapSeries
+**Note:**
+* map: Run parallel and the results array will be in the same order as the original arr.
+# Task 6: 
 
