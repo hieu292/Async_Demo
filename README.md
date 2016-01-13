@@ -23,5 +23,8 @@ hàm callback của iterator phải trả về true hoặc false
 hàm thực thi song song (parallel)
 Kết quả theo thứ tự như array truyền vào.
 # Task 7: reduce, reduceRight
+# Task 8: detect, detectSeries, detectLimit
+trả về giá trị đầu tiên trong mảng khi mà hàm iterator return true,
+hàm iterator chạy song song (parallel)
 
 
