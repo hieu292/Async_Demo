@@ -390,10 +390,49 @@ async.detectLimit(arr, 2, function (file, callback) {
     console.log(result);
 });
 
+//Task 9: sortBy
+
+var arr = [ 1,2,7,4,5,8,9];
+
+//tang dan
+
+async.sortBy(arr, function (x, callback) {
+    callback(null, x);
+}, function (err, result) {
+    console.log(result);
+});
+
+//giam dan
+
+async.sortBy(arr, function (x, callback) {
+    callback(null, -x);
+}, function (err, result) {
+    console.log(result);
+});
 
 
+//Task 10: concat
 
+arr = ['file1.json','file2.json','file3.json','file4.json'];
 
+async.concat(arr, function (file, callback) {
+    fs.readFile(file, function (err, data) {
+        if(err){
+            console.error(err);
+        }
+        if(data != ''){
+            callback(null, data);
+        } else {
+            console.log('Have a blank file, you should check it');
+        }
+    });
+}, function (err, result) {
+    if(err){
+        console.log(err);
+    }else {
+        console.log(result.toString('utf8'));
+    }
+});
 
 
 

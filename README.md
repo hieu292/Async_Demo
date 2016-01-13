@@ -26,5 +26,9 @@ Kết quả theo thứ tự như array truyền vào.
 # Task 8: detect, detectSeries, detectLimit
 trả về giá trị đầu tiên trong mảng khi mà hàm iterator return true,
 hàm iterator chạy song song (parallel)
+# Task 9: sortOrder
+sắp xếp mảng
+# Task 10: concat 
+thu thập các kết quả từ hàm iterator vào một mảng.
 
 
