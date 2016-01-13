@@ -315,8 +315,44 @@ async.filter(arr, function (file, callback) {
     console.log(result);
 });
 
+//Task 7: reduce, reduceRight
 
+async.reduce([1,2,3,4,5], 2, function (memo, item, callback) {
+    console.log(item +' '+ memo);
+    callback(null, item + memo);
+}, function (err, result) {
+    if(err){
+        console.error(err);
+    }
+    console.log(result);
+});
+/* Result:
+ 1 2
+ 2 3
+ 3 5
+ 4 8
+ 5 12
+ 17
+ */
 
+async.reduceRight([1,2,3,4,5], 2, function (memo, item, callback) {
+    console.log(item +' '+ memo);
+    callback(null, item + memo);
+}, function (err, result) {
+    if(err){
+        console.error(err);
+    }
+    console.log(result);
+});
+
+/* Result
+ 5 2
+ 4 7
+ 3 11
+ 2 14
+ 1 16
+ 17
+ */
 
 
 

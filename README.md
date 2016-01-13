@@ -22,5 +22,6 @@ có thể gọi hàm select (nó làm hàm ẩn danh của filter)
 hàm callback của iterator phải trả về true hoặc false
 hàm thực thi song song (parallel)
 Kết quả theo thứ tự như array truyền vào.
+# Task 7: reduce, reduceRight
 
 
